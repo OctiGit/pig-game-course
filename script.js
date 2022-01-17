@@ -22,7 +22,12 @@ const currentNum = [0, 0];
 const scoreNum = [0, 0];
 
 // When game beggins
+const newFeature = function(){
+  console.log('Welcome to the application')
+}
+
 const newRound = function () {
+  newFeature()
   numPlayer().classList.remove('player--winner');
   player = 0;
   playerName().textContent = 'Player 1';
