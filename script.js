@@ -22,12 +22,7 @@ const currentNum = [0, 0];
 const scoreNum = [0, 0];
 
 // When game beggins
-const newFeature = function(){
-  console.log('Welcome to the application')
-}
-
 const newRound = function () {
-  newFeature()
   numPlayer().classList.remove('player--winner');
   player = 0;
   playerName().textContent = 'Player 1';
@@ -81,7 +76,7 @@ btnHold.addEventListener('click', function () {
   scoreNum[player] += currentNum[player];
   score().textContent = scoreNum[player];
 
-  if (Number(score().textContent) >= 100) {
+  if (Number(score().textContent) >= 25) {
     playerName().textContent = '👑WINNER!👑';
     numPlayer().classList.add('player--winner');
     btnHold.disabled = true;
