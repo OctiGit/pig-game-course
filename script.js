@@ -24,6 +24,8 @@ const scoreNum = [0, 0];
 // When game beggins
 const newRound = function () {
   numPlayer().classList.remove('player--winner');
+  currentNum = [0, 0];
+  scoreNum = [0, 0];
   player = 0;
   playerName().textContent = 'Player 1';
   activePlayer[player].classList.add('player--active');
