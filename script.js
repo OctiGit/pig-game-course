@@ -18,8 +18,8 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 const btnNew = document.querySelector('.btn--new');
 const activePlayer = document.querySelectorAll('.player');
-const currentNum = [0, 0];
-const scoreNum = [0, 0];
+let currentNum = [0, 0];
+let scoreNum = [0, 0];
 
 // When game beggins
 const newRound = function () {
