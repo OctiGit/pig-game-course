@@ -78,7 +78,7 @@ btnHold.addEventListener('click', function () {
   scoreNum[player] += currentNum[player];
   score().textContent = scoreNum[player];
 
-  if (Number(score().textContent) >= 25) {
+  if (Number(score().textContent) >= 100) {
     playerName().textContent = '👑WINNER!👑';
     numPlayer().classList.add('player--winner');
     btnHold.disabled = true;
